@@ -77,7 +77,7 @@ export const NavItem = ({ className }: NavItemProps) => {
             router.push(link.href);
           }}
           className={cn(
-            'cursor-pointer px-3 py-3 text-foreground/80 transition-colors hover:text-foreground/60',
+            'cursor-pointer select-none px-3 py-3 text-foreground/80 transition-colors hover:text-foreground/60',
             {
               'blue-gradient_text hover:text-transparent':
                 activeLabelOnScroll === link.label?.toLocaleLowerCase(),
